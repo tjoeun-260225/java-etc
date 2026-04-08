@@ -1,4 +1,4 @@
-
+package thrownew;
 
 
 public class 은행Throw {
@@ -18,12 +18,21 @@ public class 은행Throw {
 
         // 3.    String     + int   + int  이어붙여서 스트링으로 확인해야되겠다!
         //    "잔액부족 : " + 금액 + 잔고
+        /**
+         * Exception - 대표
+         * RuntimeException - 부대표
+         * IllegalArgumentException, thrownew.잔액없음Exception 사원들
+         */
+        //if(금액 > 잔고) throw new IllegalArgumentException("잔액부족 : " + (금액 - 잔고));
         if(금액 > 잔고) throw new 잔액없음Exception(잔고);
-
-        // if else 로 만 해결할 경우에는 다른 상황임을 표현한 것이지
-        // 하면 안되는 것이라는 의미가 없으므로 다른데에서 외부조작을 진행할 가능성도 있다.
-        // 우리회사 체계에서 정~말 하면 안되는 행위는 throw new 처리해서 이상의 접근 하지못하도록 방지
 
         System.out.println(잔고 + "전송이 완료되었습니다.");
     }
 }
+
+
+
+// if else 로 만 해결할 경우에는 다른 상황임을 표현한 것이지
+// 하면 안되는 것이라는 의미가 없으므로 다른데에서 외부조작을 진행할 가능성도 있다.
+// 우리회사 체계에서 정~말 하면 안되는 행위는 throw new 처리해서 이상의 접근 하지못하도록 방지
+

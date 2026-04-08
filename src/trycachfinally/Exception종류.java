@@ -1,3 +1,5 @@
+package trycachfinally;
+
 /**
  * Throwable : 모든예외의 최상위
  *  Error    : 복구 불가능한 심각한 오류 -> 회사문을 닫아야 할 수 도 있을만큼 매우매우 심각!!!!
@@ -33,7 +35,7 @@ public class Exception종류 {
 
         try {
             // 성공 실패와 상관없이 무조건 개발자가 실행하고자 하는 코드 작성
-            // 주로 폴더만들기, 파일만들기, 파일 전송, 이메일 전송 등
+            // 주로 trycachfinally.폴더만들기, 파일만들기, 파일 전송, 이메일 전송 등
             // 미디어 데이터가 큰 파일을 만들고 수정하고 전송하고 삭제할 때 주로 사용
         } catch (SecurityException e) {
             System.out.println("접근할 수 있는 권한이 없어 문제가 발생했습니다. : " + e.getMessage());

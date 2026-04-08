@@ -1,3 +1,5 @@
+package trycachfinally;
+
 import java.util.Scanner;
 /*
 try - catch = 개발자가 터트리는 예외상황이 아니라 개발자는 생각도 없었는데 발생하는 상황에

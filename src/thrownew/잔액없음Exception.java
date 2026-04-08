@@ -1,3 +1,5 @@
+package thrownew;
+
 /**
  * 이미 만들어진 Exception을 이용해서
  * 개발자가 추가하고 싶은 메세지나 동작만 추가하고
@@ -13,4 +15,8 @@ public class 잔액없음Exception extends  RuntimeException {
     public 잔액없음Exception(int 잔액) {
         super("잔액 부족! 현재 잔액 : " + 잔액 + "원");
     }
+    // 추가적으로 페이지를 이동시키거나, 강제 로그아웃 처리하거나 기존에 작성했던 소비자의 데이터를
+    // 모두 삭제하거나 와 같은 개발자가 원하는 프로그램 흐름 상황을 만들 수 있다.
 }
+
+

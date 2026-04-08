@@ -1,3 +1,5 @@
+package trycachfinally;
+
 import java.io.File;
 // mkdir() = 폴더 하나만 만들 때 사용
 // mkdirs() = 폴더 안에 폴더 안에 폴더들을 무수히 만들 때 사용 하나의 폴더 만들 때도 사용 가능

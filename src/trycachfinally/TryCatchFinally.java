@@ -1,4 +1,4 @@
-import java.io.IOException;
+package trycachfinally;
 
 /**
  * try     = 시도하다 문제가 생길만한 코드를 실행하다.
@@ -19,7 +19,7 @@ public class TryCatchFinally {
 
         try {
             // 성공 실패와 상관없이 무조건 개발자가 실행하고자 하는 코드 작성
-            // 주로 폴더만들기, 파일만들기, 파일 전송, 이메일 전송 등
+            // 주로 trycachfinally.폴더만들기, 파일만들기, 파일 전송, 이메일 전송 등
             // 미디어 데이터가 큰 파일을 만들고 수정하고 전송하고 삭제할 때 주로 사용
         } catch (SecurityException e) { // RuntimeException 이 SecurityException 보다 광범위한 에러를 잡는 문서
             // SecurityException 은 RuntimeException 보다 에러를 확인하는 시야가 좁기 때문에 어짜피 RuntimeException
